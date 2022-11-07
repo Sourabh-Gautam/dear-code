@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Challenge</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function getNumber() {
+        const myNums = [10, 5, 3, 1, 11, 6, 8, 21, 7];
+        const num = myNums[Math.floor(Math.random() * myNums.length)];
+        return num;
+      }
+      function MyNum() {
+        const num = getNumber();
+        let msg = null;
+        if (num == 6) {
+          msg = (
+            <p>
+              <h3>Congratulations !You won</h3>
+              <img src="congrats.gif" />
+            </p>
+          );
+        } else {
+          msg = <small>Sorry! Better luck next time</small>;
+        }
+        return (
+          <div>
+            <p>You got the number {num} </p>
+            {msg}
+          </div>
+        );
+      }
+      let mydiv = document.querySelector("#root");
+      ReactDOM.render(<MyNum />, mydiv);
+    </script>
+  </body>
+</html>

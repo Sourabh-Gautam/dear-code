@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %} <link rel="stylesheet" href="{%static "todo/style.css" %}"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+  </head>
+  <body class="container">
+    <div class="todo">
+      <header>
+        <h1>Todo List</h1>
+        <form class="search">
+          <input
+            type="text"
+            class="txt"
+            name="search"
+            placeholder="search..."
+            autocomplete="off"
+          />
+        </form>
+      </header>
+      <div class="todolist">
+        <ul class="todos">
+          <li class="listitems">
+            <span>Read A Book</span>
+            <i class="far fa-trash-alt delete"></i>
+          </li>
+          <li class="listitems">
+            <span>Take Online Class</span>
+            <i class="far fa-trash-alt delete"></i>
+          </li>
+          <li class="listitems">
+            <span>Listen To Music</span>
+            <i class="far fa-trash-alt delete"></i>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <form class="add" name="addfrm" method="get">
+        <label>Add a new ToDo</label>
+        <input
+          type="text"
+          class="txt"
+          name="add"
+          autocomplete="off"
+          autofocus
+        />
+      </form>
+    </div>
+  </body>
+  <script src="{% static "todo/app.js" %}"></script>
+</html>

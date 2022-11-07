@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merienda&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.m-profile .container {
+  width: 800px;
+  background-color: white;
+  padding: 10px;
+  margin: auto;
+}
+
+/* pop up css */
+
+.popup-holder {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.popup {
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.popup table {
+  border-spacing: 10px;
+}
+
+.popup .options {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup header {
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.popup label {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.popup input {
+  border: none;
+  border: 1px solid lightgray;
+  outline-color: rgb(33, 111, 219);
+  outline-width: 1px;
+  font-size: 17px;
+  padding: 10px;
+  height: 40px;
+}
+
+.popup button {
+  float: right;
+  padding: 3px 7px;
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.popup .options button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.5s ease all;
+}
+
+.popup .options button:hover {
+  background-color: lightgray;
+}
+
+/* profile header */
+
+.p-header {
+  padding: 10px;
+}
+
+.p-header .photo {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+
+.p-header .photo img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.p-header .photo i {
+  position: absolute;
+  top: 50px;
+  right: 650px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.p-header .name {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px;
+}
+
+/* profile body */
+
+.p-body .title {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.p-body ul {
+  padding: 10px;
+}
+
+.p-body ul li {
+  list-style: none;
+  font-size: 20px;
+  border-top: 1px solid rgb(230, 228, 228);
+  padding: 20px;
+}
+
+.p-body ul li div {
+  display: inline-block;
+  width: 90%;
+}
+
+.p-body ul li div strong {
+  font-size: 18px;
+  font-weight: lighter;
+  display: inline-block;
+  width: 200px;
+}
+
+.p-body ul li div span {
+  font-family: "Merienda", cursive;
+}
+
+.p-body ul li > span {
+  cursor: pointer;
+  color: rgb(33, 111, 219);
+}
+
+.p-body ul li > span:hover {
+  text-decoration: underline;
+}
+
+/*address css*/
+
+section.basic-info,
+section.addresses {
+  border: 1px solid lightgrey;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+section.addresses .note{
+    text-align: right;
+}
+
+button.add {
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  background-color: rgb(33, 111, 219);
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+section.addresses ul li {
+  padding: 10px;
+}
+
+section.addresses ul div > span {
+  font-size: 16px;
+  display: inline-block;
+  width: 640px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.address{
+    border: solid lightgreen 1px;
+}
+
+section.addresses ul div > span input {
+  width: 600px;
+  padding: 10px;
+  cursor: pointer;
+      border: none;
+    border-bottom: solid 1px rgb(235, 235, 235);
+    outline-color: rgb(33, 111, 219);
+    transition: 0.5s all ease;
+}
+
+section.addresses ul div > span input:hover{
+    background: rgb(235, 235, 235);
+}
+
+section.addresses ul div > strong {
+  display: block;
+}

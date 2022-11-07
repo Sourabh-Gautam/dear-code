@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring Of Array</title>
+    <script>
+      let person = ["Sumit", 25, 50000.0, ["B.Tech", "MBA", "Phd"]];
+      let [name, age, salary, [deg1, deg2, deg3]] = person;
+      document.write("Name is " + name + "<br>");
+      document.write("Age is " + age + "<br>");
+      document.write("Salary is " + salary + "<br>");
+      document.write("First degree is " + deg1 + "<br>");
+      document.write("Second degree is " + deg2 + "<br>");
+      document.write("Third degree is " + deg3 + "<br>");
+    </script>
+  </head>
+  <body></body>
+</html>

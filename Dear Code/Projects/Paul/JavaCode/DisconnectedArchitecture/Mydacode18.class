@@ -1,0 +1,46 @@
+//Program to insert date in the database(in person table).
+import java.text.*;
+import java.sql.*;
+class MyInsertDate{
+	public static void main(String []args){
+		try{
+			Class.forName("oracle.jdbc.OracleDriver");
+			System.out.println("Driver Successfully loaded");
+		}
+		catch(ClassNotFoundException cnf){
+			System.out.println("Cannot load the driver class:" +cnf.getMessage());
+			System.exit(1);
+		}
+		Connection conn=null;
+		try{
+			conn=DriverManager.getConnection("jdbc:oracle:thin:@//SourabhPaul:1521/orcl","library","paul");
+			PreparedStatement pst=conn.prepareStatement("insert into person(name,dob) values(?,?)");
+			java.util.Scanner kb=new java.util.Scanner(System.in);
+			System.out.print("Enter Your Name: ");
+			String nam=kb.nextLine();
+			System.out.print("Enter Your DOB(dd-MMM-yyyy): ");
+			String dob=kb.next();
+			SimpleDateFormat sdf=new SimpleDateFormat("dd-MMM-yyyy");
+			java.util.Date dt=sdf.parse(dob);
+			long time=dt.getTime();
+			java.sql.Date dat=new java.sql.Date(time);
+			pst.setString(1,nam);
+			pst.setDate(2,dat);
+			int num=pst.executeUpdate();
+			System.out.print("You are Added");
+			}
+	catch(Exception sq){
+		System.out.println("Cannot Communicate with the Database:"+sq.getMessage());
+	}
+	finally{
+		if(conn!=null){
+			try{
+				conn.close();
+			}
+		catch(SQLException sq){
+			System.out.println("Connot Close the Connection:"+ sq.getMessage());
+					}
+			}
+		}
+	}
+}

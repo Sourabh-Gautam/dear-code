@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+	function sumAndAverage(){
+	var sum=0;
+	var ave;
+	for(var x in arguments){
+	sum=sum+arguments[x];
+	}
+	ave=sum/arguments.length;
+	alert("Sum of numbers is:"+sum+" and Average of numbers is:"+ave);
+	}
+</script>
+</head>
+<body>
+<script>sumAndAverage(2,3,4);</script>
+</body>
+</html>

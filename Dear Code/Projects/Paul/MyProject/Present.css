@@ -1,0 +1,146 @@
+																												/*start of area for login styles*/
+div#login
+			{
+			background-color:rgb(56, 88, 152);
+			color:red;
+			height:82px;
+			border-bottom:1px solid #133783;
+			background-color:rgb(56, 88, 152);
+			position:relative;
+			top:-8px;
+			margin-left:-8px;
+			margin-right:-8px;
+			}
+		
+table#one
+			{
+			font-family:sans-serif;
+			font-size:12px;
+			background-color:rgb(56, 88, 152);
+			color:white;
+			}
+		
+table#one tr#first .ali, table tr#second .ali, table tr#third .ali
+			{
+			padding-left:14px;
+			}
+			
+
+table#one tr#second #submit input
+			{
+			border:1px solid #133783;
+			background-color:rgb(76, 112, 182);
+			color:white;
+			font-size:14px;
+			padding-bottom:4px;
+			}
+			
+table#one #third .ali a
+			{
+			color:#ABB9D7;
+			text-decoration:none;
+			}
+			
+table#one #third .ali a:hover
+			{
+			text-decoration:underline;
+			}
+			
+div#logintable
+			{
+			position:absolute;
+			right:182px;
+			top:14px;
+			}
+			
+div div#icon
+			{
+			color:white;
+			font-family:sans-serif;
+			font-size:2.5em;
+			font-weight:bold;
+			position:absolute;
+			top:27px;
+			left:4.2em;
+			}
+																												/*end of area for login styles*/
+																												
+																												/*start of area for register styles*/
+div#register
+			{
+			background-color:#DFE3EB;
+			height:607.891px;
+			position:relative;
+			top:-8px;
+			margin-left:-8px;
+			margin-right:-8px;
+			}
+/*			
+div#register #regdiv
+			{
+			background-color:inherit;
+			border:1px solid black;
+			height:inherit;
+			position:relative;
+			left:47em;
+			}
+
+table#two
+			{
+			font-family:sans-serif;
+			background-color:#DFE3EB;
+			}
+			
+table#two tr#first
+			{
+			font-size:36px;
+			font-weight:600;
+			}
+			
+table#two tr#second
+			{
+			font-size:19px;
+			font-weight:normal;
+			}
+			
+table#two tr#fourth td input
+			{
+			width:100%;
+			}
+			
+table#two tr#fifth td input
+			{
+			width:100%;
+			}
+			
+table#two .border
+			{
+			border-radius:4px;
+			border-width:thin;
+			border-color:#77a3d4;
+			}
+
+div#regdiv
+			{
+			padding-top:20px;
+			padding-left:10px;
+			}
+
+table#two .border
+			{
+			height:40px;
+			}
+																											/*start of area for register styles*/
+			
+																											/*start of footer*/
+/*div#footer
+			{
+			position:relative;
+			top:-8px;
+			margin-left:-8px;
+			margin-right:-8px;
+			background-color:#FFA500;
+			text-align:center;
+			height:154px;
+			}
+																											/*end of footer*/

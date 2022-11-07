@@ -1,0 +1,263 @@
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous"/>
+        <link href="https://fonts.gstatic.com">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="stylesheet" href="css/main/style.css">
+        <link rel="stylesheet" href="css/main/dynamic.css">
+        <link rel="stylesheet" href="css/main/loginstyle.css">
+        <link rel="stylesheet" href="css/main/registerstyle.css">
+        <link rel="stylesheet" href="css/main/productcard.css">
+        <link rel="stylesheet" href="css/main/cartsection.css">
+        <link rel="stylesheet" href="css/main/description.css">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Goguys</title>
+    </head>
+    <body>
+        <div class="container">
+            <div id="progress-bar"></div>
+            <span id="global-tt" class="display-none"></span>
+            <div id="profile-dropdown" class="display-none">
+                <section>
+                    <div class="dp"><i class="fas fa-user-circle"></i></div>
+                    <div class="uname">Sourabh</div>
+                </section>
+                <ul>
+                    <li class="profile"><a href="profile.jsp" target="_blank"><i class="fas fa-user-cog"></i>Manage Your Account</a></li>
+                    <li class="history"><i class='bx bx-history'></i>Shopping History</li>
+                </ul>
+                <div class="logout">
+                    <button >Logout</button>        
+                </div>
+            </div>
+            <!-- Header Section -->
+            <div class="header middle-alignment">
+
+                <div class="logo-and-burger middle-alignment">
+                    <i class="fas fa-bars burger middle-alignment"></i>
+                    <div class="logo">
+                        <span>Go</span>Guys
+                    </div>
+                </div>
+                <div class="search middle-alignment">
+                    <ul class="search-list display-none">
+
+                    </ul>
+                    <input type="search" placeholder="search items...">
+                    <i class="fas fa-search middle-alignment"></i>
+                </div>
+                <div class="login-register middle-alignment">
+                    <div class="cart middle-alignment">
+                        <strong class="cart-items-counter"></strong>
+                        <i class='bx bx-cart'></i>
+                    </div>
+                    <div class="login-register-dp middle-alignment">
+                        <span class="login-register-text">Login | Register</span>
+                        <span class="dp middle-alignment"><i class="fas fa-user-circle"></i></span>
+                    </div>
+                </div>                    
+            </div>
+
+            <!-- Shop Section -->
+            <div id="shop-nav" class="shop-nav">
+                <ul id="nav-list" class="nav-list">
+
+                </ul>
+                <div class="overview-search-result">
+                </div>
+            </div>
+
+            <!-- Shop Filters -->
+
+            <div id="shop-filters" class="shop-filters middle-alignment">
+                <i class="fas fa-caret-left left-arrow middle-alignment"></i>
+                <ul id="filters"  class="filters">
+
+                </ul>
+                <i class="fas fa-caret-right right-arrow middle-alignment"></i>
+            </div>
+
+            <!-- Login and registration page container -->
+
+            <div class="login-registration-page-container showme middle-alignment display-none">
+
+                <!-- LoginPage Section -->
+
+                <div id="loginpage-container" class="loginpage-container loginpage-container2">
+                    <div class="login-card login-card2">
+                        <span class="rtt id display-none">
+                            <div class="arrow"></div>
+                            <div class="tt"></div>
+                        </span>
+                        <span class="rtt pwd display-none">
+                            <div class="arrow"></div>
+                            <div class="tt"></div>
+                        </span>
+                        <i id="login-eye" class="fas fa-eye-slash see-password display-none"></i>
+                        <i class="far fa-times-circle remove-card"></i>
+                        <div class="company-logo company-logo2"><strong><span>Go</span>Guys</strong></div>
+                        <div class="input-fields input-fields2">
+                            <input type="text" placeholder="Username, phone or email" name="username" id="username"/>
+                            <input id="login-password" type="text" placeholder="Password" name="password"/>
+                            <button id="login-btn" class="l-btn inactive-btn">Login</button>
+                            <div class="forget-pwd forget-pwd2">
+                                <a href="#" class="forget-pwd forget-pwd2">Forget password?</a>
+                            </div>
+                        </div>
+                        <div class="register register2">
+                            <span class="ask-register">Don't have an account? </span><a id="register-link" href="#">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registration Section -->
+
+                <div id="registrationpage-container" class="loginpage-container display-none">
+                    <div id="registration-card" class="login-card login-card2">
+                        <div class="otp-section display-none">
+                            <i class="bx bx-arrow-back"></i>
+                            <section>
+                                <input
+                                    type="password"
+                                    class="c-pwd"
+                                    name="c-pwd"
+                                    id="c-pwd"
+                                    placeholder="Confirm password"
+                                    maxlength="14"
+                                    />
+                                <input
+                                    type="text"
+                                    class="otp"
+                                    name="otp"
+                                    id="otp"
+                                    placeholder="Enter OTP"
+                                    autocomplete="off"
+                                    maxlength="4"
+                                    />
+                                <button class="submit-otp-btn">Submit</button>
+                            </section>
+                        </div>
+                        <i class="bx bxs-check-circle num-verified display-none"></i>
+                        <span class="rtt n display-none">
+                            <div class="arrow"></div>
+                            <div class="tt"></div>
+                        </span>
+                        <span class="rtt p display-none">
+                            <div class="arrow"></div>
+                            <div class="tt"></div>
+                        </span>
+                        <span class="rtt num display-none">
+                            <div class="arrow"></div>
+                            <div class="tt"></div>
+                        </span>
+                        <span class="rtt em display-none">
+                            <div class="arrow"></div>
+                            <div class="tt"></div>
+                        </span>
+                        <i
+                            id="registration-eye"
+                            class="fas fa-eye-slash see-password display-none"
+                            ></i>
+                        <i class="far fa-times-circle remove-card"></i>
+                        <div class="company-logo company-logo2"><strong><span>Go</span>Guys</strong></div>
+                        <div class="input-fields">
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="First name"
+                                name="fullname"
+                                />
+                            <input
+                                id="registration-password"
+                                type="password"
+                                placeholder="Create password"
+                                name="password"
+                                maxlength="14"
+                                />
+                            <div class="pno">
+                                <select class="cc">
+                                    <option value="+91">+91</option>
+                                </select>
+                                <input
+                                    type="text"
+                                    id="phone"
+                                    placeholder="Phone number"
+                                    name="phonenumber"
+                                    maxlength="10"
+                                    />
+                            </div>
+                            <div id="request-otp" class="request-otp display-none">
+                                <a href="#"> Request OTP</a>
+                            </div>
+                            <button id="register-btn" class="r-btn inactive-btn">
+                                Register
+                            </button>
+                            <div id="t-and-c" class="forget-pwd">
+                                <span>By signing up, you agree to our </span>
+                                <a href="#" id="t-and-c" class="forget-pwd"
+                                   >Terms ,Data Policy and Cookies Policy.</a
+                                >
+                            </div>
+                        </div>
+                        <div class="register register2">
+                            <span class="ask-register">Have an account? </span
+                            ><a id="login-link" href="#">Log in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card  -->
+
+            <span class="ts tooltip-arrow"></span>
+            <span class="ts tooltip"></span>
+            <div id="product-card-cover" class="product-card-cover display-none"></div>
+            <div id="product-card" class="product-card">
+                
+            </div>
+
+            <!-- Cart  Section-->
+
+            <div id="cart-section" class="cart-section">
+                <i class='bx bxs-chevrons-up return-to-top display-none'></i>
+                <div class="heading my-cart display-none">
+                    <span>My Cart</span>
+                    <strong class="towards-order"><i class="fas fa-cloud-upload-alt"></i>Towards Order</strong>
+                </div>
+                <section class="cart-items-section">
+                    
+                </section>
+                
+            </div>
+
+            <!--Discription-->
+
+            <div class="f-desc-parent" style="display: none">
+
+            </div>
+            <script src="js/main/globalvar.js"></script>
+            <script src="js/main/specialfunc.js"></script>
+            <script src="js/main/serverfunc.js"></script>
+            <script src="js/main/tooltip.js"></script>
+            <script src="js/main/app.js"></script>
+            <script src="js/main/card.js"></script>
+            <script src="js/main/cart.js"></script>
+            <script src="js/main/registrationvalidate.js"></script>
+            <script src="js/main/loginvalidate.js"></script>
+            <script src="js/main/readyajax.js"></script>
+            <script src="js/main/dynamic.js"></script>
+            <script src="js/main/searching.js"></script>
+            <script src="js/main/refresh.js"></script>
+            <script src="js/main/cartmanagement.js"></script>
+            <script src="js/main/razorpay.js"></script>
+        </div>
+    </body>
+</html>

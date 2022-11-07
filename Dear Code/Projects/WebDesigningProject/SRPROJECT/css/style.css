@@ -1,0 +1,25 @@
+body {
+  background-image: url("../images/TypingImage2.jpeg");
+}
+.container {
+  width: 30%;
+  height: 80vh;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 10vh;
+  border-radius: 3px;
+}
+.buttons {
+  background-color: aqua;
+
+  margin: 40%;
+  padding: auto;
+  position: relative;
+  margin: 35%;
+}
+.login,
+.register {
+  display: block;
+  padding: 10px;
+  border-radius: 50px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Props Without Values</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Greetings(props) {
+        if (props.who && props.from) {
+          return <h3>Good Evening</h3>;
+        } else {
+          return <h3>Good Night</h3>;
+        }
+      }
+
+      let myDiv = document.querySelector("#root");
+      let root = ReactDOM.createRoot(myDiv);
+      root.render(<Greetings who from />);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Example</title>
+    <script>
+      class Vehicle {
+        constructor() {
+          document.write("instantiating vehicle...<br>");
+        }
+        accelerate() {
+          document.write("accelerating...<br>");
+        }
+      }
+      class Car extends Vehicle {
+        constructor() {
+          super();
+          this.color = "Red";
+          document.write("instantiating car...<br>");
+        }
+        reverse() {
+          document.write("reversing...<br>");
+        }
+      }
+      let myCar = new Car();
+      myCar.accelerate();
+      myCar.reverse();
+      document.write(`Color of the Car is ${myCar.color}`);
+    </script>
+  </head>
+  <body></body>
+</html>

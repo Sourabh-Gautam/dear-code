@@ -1,0 +1,16 @@
+class Apple{
+Apple(){
+System.out.println("Inside Apple");
+}
+}
+class Banana{
+static void out(){
+Apple apple=null;
+apple=new Apple();
+}
+}
+class Use{
+public static void main(String []args){
+Banana.out();
+}
+}

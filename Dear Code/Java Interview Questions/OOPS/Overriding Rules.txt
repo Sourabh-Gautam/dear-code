@@ -1,0 +1,23 @@
+Rules Of Method Overriding :
+
+1.) While Overriding a super class method in sub class, the SIGNATURE(name and arguments) must be same.
+
+2.) Return type must either be same or can be any sub type of the type returned by the super class method. For ex, if super class method is returing Object, then sub class method while overriding can have the return type as String, since String is subclass of Object. This is called "Co-variant" return type.
+
+3.) Access modifiers must be either same or less restrictive.
+
+4.) A subclass can only override those methods which are visible to it. For example in a subclass within the same package we can override every method of the super class except it's private and final methods.
+
+5.) A subclass outside the package can only override protected and public methods because rest others are not visible in the subclass.
+
+6.) A subclass method while overriding a super class method can throw any kind of unchecked exception irrespective of whether the super class method is throwing it or not
+
+7.) For Checked Exception we have multiple rules :
+
+	a.) We can use throws clause while overriding the method and keep the same Checked Exceptiona as thrown by the super class method.
+	
+	b.) We can throw subtype Exception of the Exception thrown by the super class method. For ex : if the super class method is throwing IOException, then while overrding we can mention FileNotFoundException in the throws clause but not Exception.
+
+	c.) We cannot use the name of any other Checked Exception while overrding a method in subclass which is not mentioned in the throws clause of the method in super class.
+
+	d.) If while overrding we want then we can totally eliminate the throws clause.

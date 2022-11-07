@@ -1,0 +1,84 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: poppins, sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  padding-top: 50px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, #cc2b5e, #2193b0, #8bd6e7);
+}
+
+div.todo {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 350px;
+  border-radius: 5px;
+  margin: 0px auto;
+  box-shadow: 5px 10px 10px black, -5px 10px 10px black;
+}
+
+div.todolist {
+  height: 210px;
+  overflow-y: auto;
+}
+
+header {
+  flex-grow: 0.5;
+  color: rgb(52, 58, 45);
+  text-align: center;
+}
+
+.txt {
+  margin-top: 10px;
+  width: 250px;
+  height: 40px;
+  padding: 3px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: rgb(219, 218, 210);
+}
+
+ul {
+  flex-grow: 3;
+  margin-top: 10px;
+}
+
+li.listitems {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  color: rgb(20, 48, 49);
+  margin: 10px;
+  font-size: 20px;
+}
+
+hr {
+  width: 90%;
+  margin: auto;
+}
+
+form[name="addfrm"] {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  color: rgb(20, 48, 49);
+  font-weight: lighter;
+  margin-top: 20px;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+ul li.displayContent {
+  display: none;
+}

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Sarala:700|Exo+2:300');
+
+
+.wrapper{
+    top: 10vh;
+    left: 10%;
+  width: 10px;
+  height: 300px;
+  position: relative;
+}
+
+.card{
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-140px);
+  transition: transform 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000) 50ms;
+  cursor: pointer;
+}
+
+.card > div{
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  padding: 25px 15px;
+  transition: all 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000) 50ms;
+}
+
+.front{
+  background-color: white;
+  border: thin solid lightgray;
+  transform: rotateY(0deg) translateZ(160px); 
+  border-radius: 34px 3px 0 0;
+}
+
+.right{ 
+  background-color: lightgray;
+  transform: rotateY(90deg) translateZ(160px);
+  border-radius: 0 0 3px 34px;
+}
+
+.card:hover{
+  transform: translateZ(-160px) rotateY( -90deg);
+}
+
+.card:hover .front{
+  opacity: 0; 
+}
+
+.card:hover .right{
+  opacity: 1; 
+}
+
+h1,h2{
+  margin: 0;
+  font-size: 25px;
+  letter-spacing: -.25px;
+  transform: translateX(-10px);
+  font-family: 'Sarala'; 
+  font-weight: 700;
+}
+
+h2{
+  font-size: 21px;
+  transform: translateX(-10px);
+}
+
+p{
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.front .price{
+    margin-top: 5px;
+}
+
+
+
+@keyframes float{
+  0%{
+    transform: translateZ(20px);
+  }
+  100%{
+    transform: translateY(-21px) translateX(-13px) translateZ(30px);
+  }
+}
+
+ul{
+  margin-left: 21px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  list-style: disc;
+}
+
+li{
+  padding-bottom: 8px;
+  position: relative;
+}
+
+
+button{
+  position: absolute;
+  right: 21px; 
+  bottom: 34px;
+  border: none;
+  box-shadow: none;
+  background: none;
+  color: whitesmoke;
+  font-family: 'Exo 2';
+  font-weight: 300;
+  font-size: 15px;  
+  letter-spacing: -.25px;
+  font-weight: 700;
+  padding: 13px 34px;
+  border-radius: 55px 55px 21px 55px;
+  background-image: linear-gradient(130deg, black  50%, lightgray 100%);
+  background-size: 125% 100%;
+  background-position: right;
+  cursor: pointer;
+  box-shadow: 8px 5px 13px rgba(34,34,34,.08);
+  transform: scale(0) skewY(13deg);
+  transition: all 150ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transform-origin: right bottom;
+}
+
+.card:hover button{
+   transform: scale(1) skewY(0);
+}
+
+.card:not(:hover) button{
+opacity: 0;
+}
+
+button:hover{
+  background-position: left;
+}
+
+button.quick-buy {
+  right: 21px; 
+  bottom: 90px;
+}
+
+.price{
+  position: absolute;
+  left:30px;
+  font-size: 34px;
+  opacity: .65;
+  
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0.33;
+    transform: scale(.89);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    transform: scale(.67);
+  }
+}
+
+.img-container{
+    width: 100%;
+    margin-top: 5px;
+    
+}
+
+.front img{
+    width: 100%;
+}

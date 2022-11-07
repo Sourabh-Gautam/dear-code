@@ -1,0 +1,18 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 25vh;
+  gap: 20px;
+}
+
+section.one {
+  background-color: aquamarine;
+}
+
+section.two {
+  background-color: saddlebrown;
+}
+
+section.three {
+  background-color: blueviolet;
+}

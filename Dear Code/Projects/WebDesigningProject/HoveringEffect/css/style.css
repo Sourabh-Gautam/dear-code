@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.hover {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  background-image: url(../images/meatShopImg.jpg);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+  margin: 100px auto;
+  transition-property: all;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+}
+
+.hover:hover {
+  transform: scale(1.07, 1.07);
+  box-shadow: 5px 0px 7px lightgrey, -2px 0px 5px lightgrey,
+    0px 8px 10px lightgrey;
+}

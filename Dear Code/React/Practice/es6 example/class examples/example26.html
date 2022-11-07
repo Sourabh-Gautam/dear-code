@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Example</title>
+    <script>
+      class Emp {
+        constructor(ename, salary) {
+          this.ename = ename;
+          this.salary = salary;
+          document.write("Emp constructor called...<br>");
+        }
+        raiseSalary() {
+          this.salary = this.salary + this.salary * 0.1;
+        }
+      }
+      class Manager extends Emp {
+        constructor(name, salary, bonus) {
+          super(name, salary);
+          this.bonus = bonus;
+        }
+        raiseIncome() {
+          this.raiseSalary();
+          this.bonus = this.bonus + this.bonus * 0.1;
+        }
+        toString() {
+          return `${this.ename},${this.salary},${this.bonus}`;
+        }
+      }
+      let boss = new Manager("Amit", 50000.0, 25000.0);
+      document.write("Before increasing salary and bonus<br>");
+      document.write(boss);
+      boss.raiseIncome();
+      document.write("<br>After increasing salary and bonus<br>");
+      document.write(boss);
+    </script>
+  </head>
+  <body></body>
+</html>

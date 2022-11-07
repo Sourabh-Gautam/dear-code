@@ -1,0 +1,203 @@
+.display-none{
+    display: none;
+}
+
+.pointer-none{
+    pointer-events: none;
+}
+
+.active-shop{
+    background-color: rgba(0, 0, 0, 0.6);
+    color:  rgba(255, 255, 255, 0.8);
+}
+
+#nav-list .active-shop:hover, #shop-filters .active-shop:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color:  rgba(255, 255, 255, 1);
+}
+
+/* Screen view greater than 1000 */
+
+#shop-nav.br-dcss-gt1000{
+    width : 70px;
+}
+
+#shop-filters.br-dcss-gt1000{
+    width : calc(100% - 70px);
+    left : 70px;
+}
+
+#product-card.br-dcss-gt1000{
+    width : calc(100% - 70px);
+    left : 70px;
+    grid-template-columns: repeat(auto-fill, minmax(223px, 1fr));
+}
+
+#product-card-cover.br-dcss-gt1000{
+    width : calc(100% - 70px);
+    left : 70px;
+}
+
+#product-card .card.br-dcss-gt1000{
+    width: 223px;
+    height: 320px;
+}
+
+/* Cart Section dynamic CSS  */
+
+#cart-section.ct-dcss-gt1000{
+    width : 600px;
+}
+
+#shop-filters.ct-dcss-gt1000{
+    width : calc(100% - 680px);
+}
+
+#product-card.ct-dcss-gt1000{
+    width : calc(100% - 680px);
+    grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+}
+
+#product-card-cover.ct-dcss-gt1000{
+    width : calc(100% - 680px);
+}
+
+#product-card .card.ct-dcss-gt1000{
+    width: 195px;
+    height: 295px;
+}
+
+
+/* Screen View At Less Than 1000 */
+
+
+#shop-nav.br-dcss-lt1000{
+    width : 0px;
+}
+
+#shop-filters.br-dcss-lt1000{
+    width : calc(100% - 0px);
+    left : 0px;
+}
+
+#product-card.br-dcss-lt1000{
+    width : calc(100% - 0px);
+    left : 0px;
+}
+
+#product-card.br-dcss-lt1000{
+    width : calc(100% - 0px);
+    left : 0px;
+    grid-template-columns: repeat(auto-fill, minmax(223px, 1fr));
+}
+
+#product-card .card.br-dcss-lt1000{
+    width: 223px;
+    height: 320px;
+}
+
+/* Login and register button */
+
+#register-btn.inactive-btn {
+  background-color: rgba(2, 73, 117, 0.7);
+}
+
+#login-btn.inactive-btn {
+  background-color: rgba(2, 73, 117, 0.7);
+}
+
+/*Request otp loading animation*/
+
+#request-otp a.loading {
+  font-size: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: rgba(0, 0, 0, 0.3) solid 2px;
+  border-left-color: transparent;
+  animation: rotate 1s ease 0.3s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Submit otp button loading animation */
+
+#registration-card .otp-section button.submit-otp-btn.loading {
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: rgba(0, 0, 0, 0.3) solid 2px;
+  border-left-color: transparent;
+  animation: rotate 1s ease 0.3s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Register button loading animation */
+
+#registration-card #register-btn.loading {
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  border: rgba(0, 0, 0, 0.3) solid 2px;
+  border-left-color: transparent;
+  animation: rotate 1s ease 0.3s infinite;
+}
+
+@keyframes rotate {
+  0% {s     transform: rotate(360deg);
+  }
+}
+
+/*Main loading dynamic css*/
+
+#progress-bar.anim1{
+    animation: animate1 1s linear;
+}
+
+#progress-bar.anim2{
+    animation: animate2 1s linear;
+}
+
+@keyframes animate1{
+    0%{
+        width : 0;
+    }
+    100%{
+        width : 75%;
+    }
+}
+
+@keyframes animate2{
+    0%{
+        width : 75%;
+    }
+    100%{
+        width : 100%;
+    }
+}
+
+/*Order button css*/
+
+#cart-section .cart-items-details .order-now button.address{
+    height: 200px;
+    width: 250px;
+    background: whitesmoke;
+    display: block;
+    position: relative;
+    cursor: default;
+}

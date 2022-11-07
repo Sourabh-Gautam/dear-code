@@ -1,0 +1,48 @@
+<html>
+<head>
+<script>
+var str=prompt("Enter a number to print its table");
+num=parseInt(str);
+var arr=[];
+var flag=0;
+var count=0;
+
+if(num>3)
+{
+document.write(2+" "+3+" ");
+for(var i=4;i<=num;i++)
+{
+for(var j=1;j<=i;j++);
+{
+if(i%j==0)
+flag++;
+}
+if(flag==2)
+	{
+	arr[arr.length]=i;
+	}
+if(i==num)
+	{count++;}
+}
+}
+else if(num==3)
+document.write(2+" "+3);
+else if(num==2)
+document.write(2);
+else if(num==1)
+document.write("1 is not a prime number");
+else if(num==0)
+document.write("Input number must be greater than 0");
+if(count==1)
+{
+for(var k=0;k<=arr.length;k++)
+{
+document.write(arr[k]+" ");
+}
+}
+</script>
+</head>
+<body>
+
+</body>
+</html>

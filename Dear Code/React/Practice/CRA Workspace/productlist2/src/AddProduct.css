@@ -1,0 +1,13 @@
+.AddProduct input {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.AddProduct button {
+  background-color: black;
+  color: white;
+}
+
+.AddProduct h3 {
+  margin: 5px;
+}

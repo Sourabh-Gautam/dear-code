@@ -1,0 +1,17 @@
+.Product {
+  color: black;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+}
+button {
+  background-color: crimson;
+  color: white;
+  font-size: 80%;
+  border-radius: 10px;
+}
+.Product span {
+  margin-right: 20px;
+}

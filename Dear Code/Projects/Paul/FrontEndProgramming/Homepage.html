@@ -1,0 +1,13 @@
+<html>
+<body>
+Type Something
+<input type="text" id="mytext">
+<script>
+var x=document.getElementById("mytext");
+x.onkeypress=function(e)
+{
+alert("you pressed the key "+arguments[0].charCode);
+}
+</script>
+</body>
+</html>

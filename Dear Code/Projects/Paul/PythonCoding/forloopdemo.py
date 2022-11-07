@@ -1,0 +1,1 @@
+for var in input("Enter your name:"):print(var);print(var)

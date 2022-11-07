@@ -1,0 +1,110 @@
+.display-none {
+  display: none;
+}
+
+/* Screen view greater than 1000 */
+
+#shop-nav.br-dcss-gt1000 {
+  width: 70px;
+}
+
+#shop-filters.br-dcss-gt1000 {
+  width: calc(100% - 70px);
+  left: 70px;
+}
+
+#product-card.br-dcss-gt1000 {
+  width: calc(100% - 70px);
+  left: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+}
+
+#product-card .card.br-dcss-gt1000 {
+  width: 223px;
+  height: 320px;
+}
+
+/* Cart Section dynamic CSS  */
+
+#cart-section.ct-dcss-gt1000 {
+  transform: translate(0px);
+}
+
+#shop-filters.ct-dcss-gt1000 {
+  width: calc(100% - 680px);
+}
+
+#product-card.ct-dcss-gt1000 {
+  width: calc(100% - 680px);
+  grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+}
+
+#product-card .card.ct-dcss-gt1000 {
+  width: 195px;
+  height: 295px;
+}
+
+/* Screen View At Less Than 1000 */
+
+#shop-nav.br-dcss-lt1000 {
+  width: 0px;
+}
+
+#shop-filters.br-dcss-lt1000 {
+  width: calc(100% - 0px);
+  left: 0px;
+}
+
+#product-card.br-dcss-lt1000 {
+  width: calc(100% - 0px);
+  left: 0px;
+}
+
+#product-card.br-dcss-lt1000 {
+  width: calc(100% - 0px);
+  left: 0px;
+  grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+}
+
+#product-card .card.br-dcss-lt1000 {
+  width: 223px;
+  height: 320px;
+}
+
+/* Login and register button */
+
+#register-btn.inactive-btn {
+  background-color: rgba(2, 73, 117, 0.7);
+}
+
+/* Submit otp button loading animation */
+
+#registration-card .otp-section button.submit-otp-btn.loading {
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: rgba(0, 0, 0, 0.3) solid 2px;
+  border-left-color: transparent;
+  animation: rotate 1s ease 0.3s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+#registration-card .otp-section button.submit-otp-btn.success {
+  position: relative;
+  border: none;
+  background-image: url(check-circle-regular.svg);
+  animation: bounce 0.3s ease-in;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.9);
+  }
+}

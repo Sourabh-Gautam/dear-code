@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function show(){
+var p1=document.getElementById("p1");
+var p2=document.getElementById("p2");
+p1.style.color="red";
+p2.style.color="blue";
+var i=prompt("Enter a color name to add into the list");
+var x=document.createElement("p");
+var y=document.createTextNode(i);
+x.appendChild(y);
+switch(x){
+case "light grey":x.style.color="light grey";break;
+case "orange":x.style.color="orange";break;
+case "black":x.style.color="black";break;
+case "skyblue":x.style.color="skyblue";break;
+case "brown":x.style.color="brown";break;
+case "grey":x.style.color="grey";
+}
+var z=document.getElementById("bdy");
+z.appendChild(x);
+}
+</script>
+</head>
+<body>
+<div id="bdy">
+<p id="p1">RED</P>
+<p id="p2">BLUE</p>
+</div>
+<input type="button" value="ADD" onclick="show()">
+</body>

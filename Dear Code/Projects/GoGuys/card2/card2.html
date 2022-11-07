@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="productcard.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'></head>
+<body>
+    <span class="ts tooltip-arrow"></span>
+    <span class="ts tooltip"></span>
+    <div class="card">
+        <div class="item-details">
+            <span class="price">
+                $ 150
+            </span>
+            <p class="description">1 sealed bottle price</p>
+        </div>
+        <div class="qbuy-and-acart">
+            <i class='bx bxs-paper-plane qbuy'></i>
+            <i class='bx bx-cart acart'></i>
+        </div>
+        <div class="img-container">
+            <img src="doublehiran.png" alt="">
+        </div>
+        <div class="card-name">Double Hiran Mustard Oil ( 1 kg )</div>
+    </div>
+    <script>
+        var clear;
+
+        function show(e, h, text){
+            console.log(e.target.getBoundingClientRect());
+            $(".tooltip").text(text);
+            $(".tooltip").css("left", e.target.getBoundingClientRect().x + e.target.getBoundingClientRect().width + 15);
+            $(".tooltip").css("top", e.target.getBoundingClientRect().y);
+            $(".tooltip-arrow").css("left", e.target.getBoundingClientRect().x + e.target.getBoundingClientRect().width + 10);
+            $(".tooltip-arrow").css("top", e.target.getBoundingClientRect().y + e.target.getBoundingClientRect().height / h);
+        }
+
+        $(".qbuy").mouseenter(function (e) {
+            show(e, 6, "Quick Buy");
+            $(".tooltip").show(100);
+            $(".tooltip-arrow").show(100);
+        });
+        $(".qbuy").mouseleave(function (e) { 
+            $(".tooltip").hide(50);
+            $(".tooltip-arrow").hide(50);
+        });
+
+
+        $(".acart").mouseenter(function (e) { 
+            show(e, 6, "Add to Cart");
+            $(".tooltip").show(100);
+            $(".tooltip-arrow").show(100);
+        });
+        $(".acart").mouseleave(function (e) { 
+            $(".tooltip").hide(50);
+            $(".tooltip-arrow").hide(50);
+        });
+
+        $(".card-name").mouseenter(function (e) {
+            show(e, 9, "Description");
+            clear = setTimeout(() => {
+                $(".tooltip").show(100);
+                $(".tooltip-arrow").show(100);
+            }, 500);
+        });
+        $(".card-name").mouseleave(function (e) { 
+            clearTimeout(clear);
+            $(".tooltip").hide(50);
+            $(".tooltip-arrow").hide(50);
+        });
+    </script>
+</body>
+</html>

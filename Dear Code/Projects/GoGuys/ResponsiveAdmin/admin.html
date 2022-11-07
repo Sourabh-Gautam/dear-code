@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/admin/style.css">
+    <link rel="stylesheet" href="css/admin/manage.css">
+    <link rel="stylesheet" href="css/admin/dynamic.css">
+    
+    <title>Admin Panal</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-game'></i>
+            <span class="logo-name">
+                Goguys
+            </span>
+        </div>
+        <ul class="nav-links">
+            <li id="dashboard">
+                <a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="link-name dashboard">Dashboard</span>
+                </a>
+            </li>
+            <li id="product">
+                <a href="#">
+                    <i class='bx bx-box'></i>
+                    <span class="link-name product">Product</span>
+                </a>
+            </li>
+            <li id="order">
+                <a href="#">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="link-name order">Order</span>
+                </a>
+            </li>
+            <li id="manage-shop">
+                <a href="#">
+                    <i class='bx bx-pie-chart'></i>
+                    <span class="link-name manage-shop">Manage Shop</span>
+                </a>
+            </li>
+            <li id="total-order">
+                <a href="#">
+                    <i class='bx bx-book-alt' ></i>
+                    <span class="link-name total-order">Total Order</span>
+                </a>
+            </li>
+            <li id="team">
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span class="link-name team">Team</span>
+                </a>
+            </li>
+            <li id="messages">
+                <a href="#">
+                    <i class='bx bx-message' ></i>
+                    <span class="link-name messages">Messages</span>
+                </a>
+            </li>
+            <li id="favourites">
+                <a href="#">
+                    <i class='bx bx-heart' ></i>
+                    <span class="link-name favourites">Favourites</span>
+                </a>
+            </li>
+            <li id="settings">
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="link-name settings">Settings</span>
+                </a>
+            </li>
+            <li id="logout">
+                <a href="#">
+                    <i class='bx bx-log-out-circle' ></i>
+                    <span class="link-name logout">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Header and Home Content -->
+
+    <section class="home-section">
+
+        <!-- Header -->
+
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu three-bar'></i>
+                <span class="dashboard">
+                    Dashboard
+                </span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="search...">
+                <i class='bx bx-search'></i>
+
+            </div>
+            <div class="profile-details">
+                <img src="image.jpg" alt="profile">
+                <span class="admin-name">
+                    Rohit KhaliBali
+                </span>
+                <i class='bx bxs-chevron-down' ></i>
+            </div>
+        </nav>
+
+        <!-- Header End -->
+
+        <!-- Dashboard content -->
+
+        <div class="dashboard">
+            <div class="overview-boxes">
+                <div class="box">
+                    
+                </div>
+                <div class="box">
+                    
+                </div>
+                <div class="box">
+                    
+                </div>
+                <div class="box">
+                    
+                </div>                
+            </div>
+        </div>
+
+        <!-- Dashboard content End-->
+
+        <!-- Manage Shop Content -->
+
+        <div class="manage-shop display-none">
+            <div class="overview-boxes">
+                <div class="add-shop-box box">
+                    <div class="shop-title">
+                        Add Shop
+                    </div>
+                    <input type="text" name="shop-name" class="shop-name" placeholder="enter shop name">
+                    <input type="text" name="shop-name" class="shop-name" placeholder="enter icon html">
+                    <div class="ext-links">
+                        <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="_blank">Get Icons FA</a>
+                    <a href="https://boxicons.com/" target="_blank">Get Icons BI</a>
+                    </div>
+                    <button>Add</button>
+                </div>
+                <div class="remove-shop-box box">
+                    <div class="shop-title">
+                        Remove Shop
+                    </div>
+                    <select name="shopname" id="shops">
+                       <option value="choose">choose shop name</option> 
+                    </select>
+                    <button>Remove</button>
+                </div>
+                <div class="update-shop-box box">
+                    <div class="shop-title">
+                        Update Shop
+                    </div>
+                    <select name="shopname" id="shops">
+                        <option value="choose">choose shop name</option> 
+                     </select>
+                    <input type="text" name="shop-name" class="shop-name" placeholder="enter new shop name">
+                    <input type="text" name="shop-name" class="shop-name" placeholder="enter icon html">
+                    <div class="ext-links">
+                        <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free" target="_blank">Get Icons FA</a>
+                    <a href="https://boxicons.com/" target="_blank">Get Icons BI</a>
+                    </div>
+                    <button>Update</button>
+                </div>
+                <div class="add-shopc-box box">
+                    <div class="shop-title">
+                        Add Shop Category
+                    </div>
+                    <select name="shopname" id="shops">
+                        <option value="choose">choose shop name</option> 
+                     </select>
+                    <input type="text" name="shop-name" class="shop-name" placeholder="enter category name">
+                    <button>Add</button>
+                </div>
+                <div class="remove-shopc-box box">
+                    <div class="shop-title">
+                        Remove Shop Category
+                    </div>
+                    <select name="shopname" id="shops">
+                        <option value="choose">choose shop name</option> 
+                     </select>
+                    <select name="categoryname" id="shops">
+                        <option value="choose">choose category name</option> 
+                     </select>
+                    <button>Remove</button>
+                </div>
+                <div class="update-shopc-box box">
+                    <div class="shop-title">
+                        Update Shop Category
+                    </div>
+                    <select name="shopname" id="shops">
+                        <option value="choose">choose shop name</option> 
+                     </select>
+                    <select name="categoryname" id="shops">
+                        <option value="choose">choose category name</option> 
+                     </select>
+                    <input type="text" name="shop-name" class="shop-name" placeholder="enter new category name">
+                    <button>Update</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manage Shop Content End -->
+
+    </section>
+    <script src="js/admin/app.js"></script>
+</body>
+</html>

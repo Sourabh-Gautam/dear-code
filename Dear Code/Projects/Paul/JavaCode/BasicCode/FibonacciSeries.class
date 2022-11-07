@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class FibonacciSeries{
+public static void main(String []args){
+int a=0;
+int b=1;
+System.out.println("Enter any number:");
+int count=0;
+Scanner kb=new Scanner(System.in);
+int x=kb.nextInt();
+System.out.print(a+","+b);
+while(count<=x){
+count=a+b;
+System.out.print(","+count);
+a=b;
+b=count;
+}}}

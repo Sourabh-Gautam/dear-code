@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <script>
+      function timer() {
+        setInterval(function () {
+          let d = new Date();
+          let div = document.querySelector("div");
+          div.innerHTML = "";
+          let x = document.createElement("span");
+          let y = document.createTextNode(
+            d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+          );
+          let z = x.appendChild(y);
+          div.appendChild(z);
+        }, 1000);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Show Timer" onclick="timer()" />
+    <div></div>
+  </body>
+</html>

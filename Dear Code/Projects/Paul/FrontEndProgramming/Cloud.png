@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>Checkbox</title>
+</head>
+<body>
+<form>
+Select the languages you know:<br><br>
+<input type="checkbox" value="C" name="checkbox1" checked><b>C</b><br>
+<input type="checkbox" value="PHP" name="checkbox2"><b>PHP</b><br>
+<input type="checkbox" value="C++" name="checkbox3"><b>C++</b><br>
+<input type="checkbox" value="JSE" name="checkbox4" checked><b>Core Java</b><br>
+</body>
+</form>
+</html>

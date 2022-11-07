@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.ts{
+    position: fixed;
+    display: none;
+}
+
+.tooltip{    
+    white-space: nowrap;
+    padding: 7px;
+    font-size: 13px;
+    background-color: rgb(44, 44, 44);
+    color: rgb(219, 219, 219);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.tooltip-arrow{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    transform: rotate(136deg) skew(25deg,25deg);
+    background-color: rgb(44, 44, 44);
+    z-index: 10;
+}
+
+.card{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    background-color: rgb(248, 248, 248);
+    border: thin solid rgb(219, 219, 219);
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card .price{
+    font-size: 24px;
+    font-weight: 1000;
+    padding: 5px;
+}
+
+.card .description{
+    color: grey;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.card .qbuy-and-acart {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.card .qbuy-and-acart i{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 0 3px 3px 0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.card .qbuy-and-acart i.qbuy{
+    background-color: rgb(219, 219, 219);
+}
+
+.card .qbuy-and-acart i.acart{
+    background-color: rgb(219, 219, 219);
+}
+
+.card .img-container{
+    padding: 10px;
+}
+
+.card .img-container img{
+    width: 100%;
+}
+
+.card .card-name{
+    padding: 0 3px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.card .display{
+    display: none;
+}

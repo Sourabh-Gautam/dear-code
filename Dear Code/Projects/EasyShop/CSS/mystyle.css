@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div table.tablestyle {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+div table.tablestyle tr td a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+div.secondDiv {
+  background-color: #111e27;
+  height: 250px;
+  padding-top: 15px;
+}
+
+div.thirdDiv {
+  background-color: #e7e7e7;
+  width: 93%;
+  height: 240px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+div.thirdDiv table.shops tr td a {
+  color: black;
+  font-weight: bold;
+}
+
+div.thirdDiv table.shops tr td img {
+  border-radius: 65px;
+}

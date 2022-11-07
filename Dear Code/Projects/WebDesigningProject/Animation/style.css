@@ -1,0 +1,44 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.sky {
+  background-color: skyblue;
+  width: 100%;
+  height: 50vh;
+  padding-top: 55px;
+  box-sizing: border-box;
+}
+
+div.wall {
+  background-color: black;
+  width: 100%;
+  height: 50vh;
+}
+
+img.car {
+  width: 120px;
+  height: 100px;
+  margin-left: -10px;
+  animation: drive 3 linear 3s 3s forwards alternate;
+}
+
+div.sun {
+  height: 100px;
+  width: 100px;
+  background-image: radial-gradient(circle, orange, yellow);
+  border-radius: 50%;
+  margin: 0px 1000px 100px 1000px;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1260px);
+  }
+}

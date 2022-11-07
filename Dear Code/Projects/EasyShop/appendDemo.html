@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function addParagraph() {
+        let div = document.querySelector("div");
+        let para = document.getElementById("p2");
+        let newpara = document.createElement("p");
+        let txt = document.createTextNode("This is new para");
+        newpara.appendChild(txt);
+      }
+    </script>
+  </head>
+  <body>
+    <div style="border: thin solid black">
+      <p>This is para 1</p>
+      <p id="p2">This is para 2</p>
+      <p>This is para 3</p>
+    </div>
+    <input type="button" value="Add Paragraph" onclick="addParagraph()" />
+  </body>
+</html>

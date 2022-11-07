@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="popup-holder" style="display: none">
+      <div class="popup"></div>
+    </div>
+    <main class="m-profile">
+      <div class="container">
+        <section class="p-header">
+          <div>
+            <div class="photo">
+              <img src="sourabh.jpg" alt="your photo" />
+              <div class="upload"><i class="bx bxs-camera"></i></div>
+            </div>
+          </div>
+          <div>
+            <div class="name">Sourabh</div>
+          </div>
+        </section>
+        <section class="p-body">
+          <section class="basic-info">
+            <div class="title">Basic Info</div>
+            <ul>
+              <li>
+                <div><strong>Name</strong><span>Sourabh</span></div>
+                <span class="edit edit-name">edit</span>
+              </li>
+              <li>
+                <div><strong>Password</strong><span>********</span></div>
+                <span class="edit edit-pwd">change</span>
+              </li>
+              <li>
+                <div><strong>Mobile</strong><span>+91 9953774522</span></div>
+                <span class="edit edit-mob">change</span>
+              </li>
+              <li>
+                <div><strong>Email</strong><span>No email linked</span></div>
+                <span class="edit edit-email">change</span>
+              </li>
+            </ul>
+          </section>
+          <section class="addresses">
+            <div class="title">Address Info</div>
+            <ul>
+              <li>
+                <div>
+                  <strong>Address 1</strong
+                  ><span
+                    ><input
+                      type="text"
+                      value="HNO 401 ram nagar arthala mohan nagar ghaziabad uttar paradesh india"
+                      disabled
+                  /></span>
+                </div>
+                <span class="edit">remove</span>
+              </li>
+            </ul>
+            <button class="add">
+              <i class="bx bxs-plus-circle"></i> New address
+            </button>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="profile.js"></script>
+</html>

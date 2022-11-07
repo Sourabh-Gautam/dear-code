@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Text Area</title>
+</head>
+<body>
+<form>
+<p>Your review about this site</p>
+<textarea>
+Type here
+</textarea>
+</body>
+</html>

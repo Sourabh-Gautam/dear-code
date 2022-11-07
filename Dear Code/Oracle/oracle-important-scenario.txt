@@ -1,0 +1,30 @@
+Task 1 : How to forget any user password ?
+
+
+1.) Open your SQL command line and type the following:
+
+	SQL> connect / as sysdba
+
+2.) Once connected,you can enter the following query to get details of username and password:
+
+	SQL> select username,password from dba_users;
+
+	This will list down the usernames,but passwords would not be visible.But you can identify the particular username and then change the password for that user.
+
+3.) For changing the password,use the below query:
+
+	SQL> alter user username identified by password;
+
+	Here username is the name of user whose password you want to change and password is the new password.
+
+
+Task 2 : How to drop a user ?
+
+
+1.) To drop only user:
+
+	SQL> drop user username
+
+2.) To drop user as well as related objects:
+
+	SQL> drop user username cascade

@@ -1,0 +1,190 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f2f9ff;
+}
+
+div.one {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  margin-top: 18px;
+  display: flex;
+}
+
+ul.header {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+ul.header li {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+
+ul.header li.Bar input {
+  width: 18px;
+  height: 17px;
+  padding-left: 40px;
+  outline: none;
+  border: none;
+}
+
+ul.header li.EasyShop img {
+  width: 140px;
+  height: 35px;
+  padding-left: 25px;
+  padding-top: 9px;
+}
+
+ul.header li.SearchBox span.searchSpan {
+  display: flex;
+  padding: 5px 5px 0px 35px;
+  margin: 0px 10px 5px;
+
+  border-radius: 5px;
+}
+
+ul.header li.SearchBox span.spacingSpan {
+  background-color: white;
+  width: 100px;
+}
+
+ul.header li.SearchBox span.searchSpan input {
+  width: 300px;
+  height: 40px;
+  padding-top: 10px;
+  border: none;
+  border-bottom: solid 1px rgb(233, 223, 223);
+  outline: none;
+}
+
+ul.header li.SearchBox span.searchSpan input:hover {
+  border-bottom: solid 1px #01b594;
+}
+
+ul.header li.SearchBox span img {
+  width: 30px;
+  height: 30px;
+  padding-top: 12px;
+  margin-right: 6px;
+}
+ul.header li.LoginIcon input {
+  width: 20px;
+  height: 20px;
+  margin-left: 360px;
+  padding-top: 3px;
+  margin-right: 4px;
+  outline: none;
+}
+
+ul.header li.LoginIcon label:hover {
+  text-decoration: underline;
+}
+
+div.two {
+  width: 100%;
+  background-color: #111e27;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+div.two table {
+  width: 95%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-size: 75%;
+}
+
+div.two table tr.menuItem img {
+  width: 30px;
+  width: 30px;
+  margin-bottom: -6px;
+}
+div.two table tr.menuItem span {
+  color: rgb(141, 141, 141);
+  display: block;
+}
+
+div.two table tr.menuItem span img {
+  display: block;
+  margin-left: 45px;
+}
+div.two table tr.menuItem td {
+  text-align: center;
+}
+
+div.two table tr.menuItem td a {
+  text-decoration: none;
+}
+
+div.two table tr.menuItem td span:hover {
+  color: white;
+}
+
+div.parentShopDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: -170px;
+}
+
+div.parentShopDiv div.shopDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e7e7;
+  width: 93%;
+  height: 240px;
+  border-radius: 5px;
+}
+
+div.parentShopDiv div.shopDiv table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+div.parentShopDiv div.shopDiv table td {
+  text-align: center;
+  border-radius: 5px;
+}
+
+div.parentShopDiv div.shopDiv table tr.menuShop img {
+  height: 130px;
+  width: 130px;
+  display: block;
+  border-radius: 70px;
+  margin-left: 28px;
+}
+
+div.parentShopDiv div.shopDiv table tr.menuShop td a {
+  text-decoration: none;
+  color: black;
+  font-size: 80%;
+  font-weight: bolder;
+}
+
+div.parentShopDiv div.shopDiv table tr.menuShop td:hover {
+  background-color: white;
+}
+
+div.parentDivTwoImages {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+div.parentDivTwoImages div.childDivTwoImages img {
+  width: 50%;
+}
+
+div.parentDivTwoImages div.childDivTwoImages {
+  background-color: white;
+  display: flex;
+  width: 93%;
+  border-radius: 5px;
+}

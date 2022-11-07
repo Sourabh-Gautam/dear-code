@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My First React App</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function getNumber() {
+        let myNums = [10, 5, 2, 78, 3, 21, 67, 9, 11, 18];
+        let num = myNums[Math.floor(Math.random() * myNums.length)];
+        return num;
+      }
+
+      function MyNum() {
+        let num = getNumber();
+        return (
+          <div>
+            <p>Number is {num}</p>
+            <small>
+              {num % 2 == 0 ? (
+                <span>
+                  It is an <b>Even</b>Number
+                </span>
+              ) : (
+                <span></span>
+              )}
+            </small>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MyNum />, document.querySelector("#root"));
+    </script>
+  </body>
+</html>

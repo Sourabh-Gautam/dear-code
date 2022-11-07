@@ -1,0 +1,16 @@
+npm create-react-app react-mui-demo
+
+npm install @mui/material @emotion/react @emotion/styled
+
+npm install @mui/icons-material
+
+npm install @mui/lab
+
+npm install @mui/x-date-pickers
+
+npm install dayjs --save
+
+npm install @mui/x-date-pickers-pro
+
+npm install date-fns --save
+

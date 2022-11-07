@@ -1,0 +1,26 @@
+ul {
+    list-style-type: none;
+    display: flex;
+}
+ul li {
+    border: thin black solid;
+    margin-left: 20px;
+    min-width: fit-content;
+    white-space: pre-wrap;
+}
+#scroll {
+    background-color: rgb(214, 214, 214);
+    width: 50%;
+    overflow-x: scroll;
+    display: inline-block;
+
+}
+#scroll::-webkit-scrollbar {
+    display: none;
+}
+button {
+    
+    width: auto;
+    height: 100%;
+    padding: 10px;
+}

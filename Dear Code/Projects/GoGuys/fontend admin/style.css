@@ -1,0 +1,38 @@
+.nav-container{
+    color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    background-image: url(bg.jpg);
+    background-size: contain;
+
+}
+ 
+.home-content{
+    font-size: 200px;
+    font-weight: bolder;
+    display: grid;
+    place-items: center;
+}
+
+.product-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-content > div{
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    border: rgba(255,255,255, 0.2) thin solid;
+    margin: 50px 50px;
+    padding: 50px;
+}
+
+.shop-category-content{
+
+}
+
+.shop-content{
+
+}

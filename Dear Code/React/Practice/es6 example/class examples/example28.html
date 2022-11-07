@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+    <script>
+      class Circle {
+        constructor(radius) {
+          this.radius = radius;
+        }
+        area() {
+          return Math.PI * Math.pow(this.radius, 2);
+        }
+      }
+      class Cylinder extends Circle {
+        constructor(radius, height) {
+          super(radius);
+          this.height = height;
+        }
+        area() {
+          return 2 * super.area() + 2 * Math.PI * this.radius * this.height;
+        }
+        volume() {
+          return super.area() * this.height;
+        }
+      }
+      let cy = new Cylinder(10, 20);
+      document.write("Area is " + cy.area());
+      document.write("<br>Volume is " + cy.volume());
+    </script>
+  </head>
+  <body></body>
+</html>
