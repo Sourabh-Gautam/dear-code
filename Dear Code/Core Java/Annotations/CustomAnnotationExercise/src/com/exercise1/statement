@@ -1,0 +1,4 @@
+Create a marker interface named as Capitalize.
+Create a class Person having two data member name, email.
+Use the Capitalize annotation with name.
+Now create a Driver class. Inside driver class, whoever data member annotate with Capitalize their value should be capitalize.
